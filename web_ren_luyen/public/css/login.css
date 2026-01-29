@@ -1,0 +1,53 @@
+/* Container cho toàn bộ form */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto; /* Căn giữa trang */
+    padding: 30px;
+    background-color: #fff; /* Nền trắng */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    font-family: Arial, sans-serif; /* Font chữ đơn giản */
+}
+
+/* Styling cho input fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Viền xám nhạt */
+    border-radius: 5px; /* Bo góc nhẹ */
+    font-size: 16px; /* Kích thước chữ */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng width */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền */
+}
+
+.input-field:focus {
+    outline: none; /* Bỏ outline mặc định */
+    border-color: #007bff; /* Màu xanh khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Bóng xanh nhẹ */
+}
+
+/* Styling cho nút đăng nhập */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Màu xanh dương */
+    color: white; /* Chữ trắng */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; /* Con trỏ tay khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Responsive: Giảm padding trên mobile */
+@media (max-width: 600px) {
+    .login-form {
+        margin: 20px;
+        padding: 20px;
+    }
+}

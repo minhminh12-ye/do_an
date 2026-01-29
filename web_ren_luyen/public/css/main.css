@@ -1,0 +1,77 @@
+    html, body {
+    margin: 0;
+    height: 100%;
+    }
+
+    /* Khung tổng */
+    .container {
+    display: flex;
+    height: 100vh;
+    }
+
+    /* Cột icon đen */
+    .sidebar {
+    width: 90px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    }
+
+    .icon-strip {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    .logo {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    }
+
+    .icon {
+    width: 50px;
+    height: 50px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    }
+
+    /* Khung chính */
+    .main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    background: #3b3939;
+    gap: 6px;
+    }
+
+    /* Menu trái */
+    .menu-strip {
+    background: #3b3939;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    }
+
+    .menu-item {
+    height: 150px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    flex-shrink: 0;
+    }
+
+    /* Content phải */
+    .content {
+    background: #fff;
+    margin: 6px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    position: relative;
+    }
