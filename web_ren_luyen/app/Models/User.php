@@ -32,4 +32,20 @@ class User extends Authenticatable
         return $this->belongsToMany(Role::class, 'user_roles');
     }
 
+    public function trainingPrograms()
+    {
+        return $this->hasMany(TrainingProgram::class, 'user_id');
+    }
+
+    public function studentTrainingPrograms()
+    {
+        return $this->hasMany(StudentTrainingProgram::class, 'student_id');
+    }
+
+    public function trainingScores()
+    {
+        return $this->hasMany(TrainingScore::class, 'student_id');
+    }
+
+
 }
